@@ -30,10 +30,6 @@ times = nc_ds['time'].values
 # get affine of nc-file with rasterio
 affine = rio.open(nc_fo).transform
 
-final_data = pd.DataFrame(columns=['date', 'ID', 'MedianTas'])
-
-#pool = multiprocessing.Pool(4)
-
 start = timerr.perf_counter()
 
 
